@@ -1,51 +1,54 @@
-//Challenge #377 [Easy] Axis-aligned crate packing
-//for instance, if the crate is size X = 25 by Y = 18, and the boxes are size x = 6 by y = 5, then the answer is 12. You can fit 4 boxes along the x-axis (because 6*4 <= 25), and 3 boxes along the y-axis (because 5*3 <= 18), so in total you can fit 4*3 = 12 boxes in a rectangle.
-//BONUS ou now have the option of rotating all boxes by 90 degrees, so that you can treat a set of 6-by-5 boxes as a set of 5-by-6 boxes. You do not have the option of rotating some of the boxes but not others.
+/*Challenge #377 [Easy] Axis-aligned crate packing
+for instance, if the crate is size X = 25 by Y = 18, and the boxes are size x = 6 by y = 5, then the answer is 12. 
+You can fit 4 boxes along the x-axis (because 6*4 <= 25), and 3 boxes along the y-axis (because 5*3 <= 18), so in total you can fit 4*3 = 12 boxes in a rectangle.
+BONUS ou now have the option of rotating all boxes by 90 degrees, so that you can treat a set of 6-by-5 boxes as a set of 5-by-6 boxes. 
+You do not have the option of rotating some of the boxes but not others.
+*/
 
-package challenge.pkg377;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Challenge377 {
-    public static void main(String[] args) {
-        int A = 0;
-        int B = 0;
-        int a=0;
-        int b=0;
-        while (A == 0 || B == 0 || a ==0 || b == 0){
-        try{
-            Scanner scanner = new Scanner(System.in);
-            System.out.println("Type A (bigger than 0)");
-            A = scanner.nextInt();
-            System.out.println("Type B (bigger than 0)");
-            B = scanner.nextInt();
-             System.out.println("Type size of box a (bigger than 0)");
-            a = scanner.nextInt();
-            System.out.println("Type size of box b (bigger than 0)");
-            b = scanner.nextInt();
-            
-        }catch(InputMismatchException n){
-            System.out.println("Type only numbers!");
-        }
-    }
-        System.out.println(Rotated(A,B,a,b));  
-    }
-        public static int nRotated(int A, int B, int a, int b){
-       
-        if(A > a && B > b){
-        int rA = A/a;
-        int rB= B/b;
-        return rA*rB;
-        }
-        else
-        System.out.println("You can't fit boxes");
-        return 0;
-        }
-        public static int Rotated(int A, int B, int a, int b){
-         
-             int normal = nRotated(A, B, a, b);  
-             int rotated = nRotated(A, B, b, a); 
-            return Math.max(normal, rotated);
-        } 
+	public static void main(String[] args) {
+		int A = 0; // first side of the main box
+		int B = 0; // second side of the main box
+		int a = 0; // first side of the small box from user
+		int b = 0; // second side of the small box from user
+		while (A == 0 || B == 0 || a == 0 || b == 0) {
+			try {
+				Scanner scanner = new Scanner(System.in);
+				System.out.println("Type A (bigger than 0)");
+				A = scanner.nextInt();
+				System.out.println("Type B (bigger than 0)");
+				B = scanner.nextInt();
+				System.out.println("Type size of box a (bigger than 0)");
+				a = scanner.nextInt();
+				System.out.println("Type size of box b (bigger than 0)");
+				b = scanner.nextInt();
+
+			} catch (InputMismatchException n) {
+				System.out.println("Type only numbers!");
+			}
+		}
+		System.out.println(Rotated(A, B, a, b));
+	}
+
+	public static int nRotated(int A, int B, int a, int b) {
+
+		if (A > a && B > b) {
+			int rA = A / a;
+			int rB = B / b;
+			return rA * rB;
+		} else
+			System.out.println("You can't fit boxes");
+		return 0;
+	}
+
+	public static int Rotated(int A, int B, int a, int b) {
+
+		int normal = nRotated(A, B, a, b);
+		int rotated = nRotated(A, B, b, a);
+		return Math.max(normal, rotated);
+	}
 }
