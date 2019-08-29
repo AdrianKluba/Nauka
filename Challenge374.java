@@ -19,7 +19,7 @@ import java.util.Scanner;
 
 public class Challenge370 {
 
-	public static void Main(String[] args) {
+	public static void main(String[] args) {
 		long zero = 0;
 		long odd = 0;
 		long even = 0;
