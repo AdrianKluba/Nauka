@@ -8,6 +8,7 @@ loop 2
 loop 3
 1 + 0 = 1
 */
+package javaapplication40;
 import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.List;
@@ -19,36 +20,36 @@ public class Challenge374 {
 
     public static void Main(String[] args) {
    
-      List<Integer> numberList = new ArrayList();
-      int number =0; 
+      List<Integer> userNumberList = new ArrayList();
+      int userNumber =0; 
      
-       for (int i = 1; i > number;  ){
+       for (int i = 1; i > userNumber;  ){
         try{
             Scanner scanner = new Scanner(System.in);
             System.out.println("Type number");
-          number = scanner.nextInt();
+          userNumber = scanner.nextInt();
         }
-        catch(NumberFormatException | InputMismatchException n){
-            System.out.println("Type only numbers!");
+        catch(InputMismatchException n){
+            System.out.println("Type only number!");
         }
         }
        int loops = 0;
-      while(number > 9){
+      while(userNumber > 9){
      
           do{
-              numberList.add(number%10);
-              number /= 10;
+              userNumberList.add(userNumber%10);
+              userNumber /= 10;
 
-          }while(number != 0);
+          }while(userNumber != 0);
         
           
-                for (int i =0; i != numberList.size();){
-             number += numberList.get(i);
-             numberList.remove(i);
+                for (int i =0; i != userNumberList.size();){
+             userNumber += userNumberList.get(i);
+             userNumberList.remove(i);
           }
                 loops++;
       }
-      System.out.println("result: " + number + " number of loops: " + loops);
+      System.out.println("result: " + userNumber + " userNumber of loops: " + loops);
 
     }
 }
