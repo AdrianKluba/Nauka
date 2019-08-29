@@ -1,13 +1,13 @@
-//Challenge #374 [Easy] Additive Persistence
-//for example 199 
-//loop 1:
-//1 + 9 + 9 = 19
-//loop 2
-//1 + 9 = 10
-//loop 3
-//1 + 0 = 1
-
-package challenge.pkg374;
+/*
+Challenge #374 [Easy] Additive Persistence
+for example 199 
+loop 1:
+1 + 9 + 9 = 19
+loop 2
+1 + 9 = 10
+loop 3
+1 + 0 = 1
+*/
 import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.List;
@@ -17,38 +17,38 @@ import java.util.Scanner;
 public class Challenge374 {
 
 
-    public static void main(String[] args) {
+    public static void Main(String[] args) {
    
       List<Integer> numberList = new ArrayList();
-      int number2 =0; 
+      int number =0; 
      
-       for (int i = 1; i > number2;  ){
+       for (int i = 1; i > number;  ){
         try{
             Scanner scanner = new Scanner(System.in);
             System.out.println("Type number");
-          number2 = scanner.nextInt();
+          number = scanner.nextInt();
         }
         catch(NumberFormatException | InputMismatchException n){
             System.out.println("Type only numbers!");
         }
         }
        int loops = 0;
-      while(number2 > 9){
+      while(number > 9){
      
           do{
-              numberList.add(number2%10);
-              number2 /= 10;
+              numberList.add(number%10);
+              number /= 10;
 
-          }while(number2 != 0);
+          }while(number != 0);
         
           
                 for (int i =0; i != numberList.size();){
-             number2 += numberList.get(i);
+             number += numberList.get(i);
              numberList.remove(i);
           }
                 loops++;
       }
-      System.out.println("result " + number2 + " number of loops " + loops);
+      System.out.println("result: " + number + " number of loops: " + loops);
 
     }
 }
