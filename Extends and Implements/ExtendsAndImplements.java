@@ -23,7 +23,7 @@ public class ExtendsAndImplements {
      */
     public static void main(String[] args) {
        
-        List<Monster> all = Arrays.asList(
+        List<Monster> monsterList = Arrays.asList(
         new Fire(50, 20, 30, "Fire Elemental", 15),
         new Fire(60, 100, 50, "Fire Monk", 30),
         new Water(70, 30, 35, "Water Elemental", 5),
@@ -31,7 +31,7 @@ public class ExtendsAndImplements {
         );
 
 
-    all.stream().forEach(System.out::println);
+    monsterList.stream().forEach(System.out::println);
 
     }
     
