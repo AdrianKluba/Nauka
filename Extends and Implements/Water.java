@@ -22,7 +22,8 @@ public class Water extends Monster implements WaterResist {
     }
     @Override
     public String toString(){
-        return "Name: " + name + clas + " HP: " + hp + " Mana: " + mana+ " Speed: " + speed + " Water Attack: " +Attack + " Extra damage from fire: "+ fireResist+"%"+ " Water Resist: +" + waterResist+"% ";
+        return "Name: " + name + clas + " HP: " + hp + " Mana: " + mana+ " Speed: " + speed + " Water Attack: " +Attack 
+            + " Extra damage from fire: "+ fireResist+"%"+ " Water Resist: +" + waterResist+"% ";
          }
     
 }
