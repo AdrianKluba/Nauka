@@ -18,9 +18,9 @@ public class LibraryV2 {
     public static void main(String[] args) {
         
         List<book> lista = Arrays.asList(
-        new book("Sapkowski","Book about game Witcher", false, 11),
-        new book("Sapkowski","The Witcher", true, 40),
-        new book("Graham McNeill", "Empire", false,10)
+                new book("Sapkowski","Book about game Witcher", false, 11),
+                new book("Sapkowski","The Witcher", true, 40),
+                new book("Graham McNeill", "Empire", false,10)
         );
          lista.stream()
                 .filter(book -> book.isBorrow() == true)
