@@ -17,16 +17,16 @@ public class LibraryV2 {
      */
     public static void main(String[] args) {
         
-        List<book> lista = Arrays.asList(
-                new book("Sapkowski","Book about game Witcher", false, 11),
-                new book("Sapkowski","The Witcher", true, 40),
-                new book("Graham McNeill", "Empire", false,10)
+        List<Book> bookList = Arrays.asList(
+                new Book("Sapkowski","Book about game Witcher", false, 11),
+                new Book("Sapkowski","The Witcher", true, 40),
+                new Book("Graham McNeill", "Empire", false,10)
         );
-         lista.stream()
-                .filter(book -> book.isBorrow() == true)
-                .filter(book -> book.getPrice() < 50)
-                .filter(book -> book.getAuthor().equals("Sapkowski"))
-                .map(book -> book.getAuthor() + " " + book.getDescription() + " " + book.isBorrow() + " " + book.getPrice())
+         bookList.stream()
+                .filter(Book -> Book.isBorrow() == true)
+                .filter(Book -> Book.getPrice() < 50)
+                .filter(Book -> Book.getAuthor().equals("Sapkowski"))
+                .map(Book -> Book.getAuthor() + " " + Book.getDescription() + " " + Book.isBorrow() + " " + Book.getPrice())
                 .forEach(System.out::println);
          
                 
