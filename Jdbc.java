@@ -6,7 +6,7 @@ import java.sql.*;
 public class Jdbc {
 
 	public static void main(String[] args) {
-		int a = 5;
+		int toDB = 5;
 		try {
 			Connection test = DriverManager.getConnection("jdbc:mysql://localhost/first?" + "user=user&password=pass");
 			Statement stmt = test.createStatement();
@@ -14,7 +14,7 @@ public class Jdbc {
 			stmt.execute("CREATE TABLE book(" + "Author TEXT," + "Descritpion TEXT," + "Price int)");
 
 			stmt.executeUpdate(
-					"INSERT INTO book(Author,Descritpion,Price) VALUES ('Sapkowski','book about game','" + a + "')");
+					"INSERT INTO book(Author,Descritpion,Price) VALUES ('Sapkowski','book about game','" + toDB + "')");
 			stmt.executeUpdate("UPDATE book SET Price= '6' WHERE Author = 'Sapkowski'");
 
 			try (ResultSet rs = stmt.executeQuery("SELECT * FROM book")) {
