@@ -20,7 +20,8 @@ public class Fire extends Monster implements FireResist {
     
     @Override
     public String toString(){
-        return "Name: " + name + clas + " HP: " + hp + " Mana: " + mana+ " Speed: " + speed + " Fire Attack: " +Attack+ " Extra damage from water: +" + waterResist+"% "+ "Fire Resist: "+ fireResist+"%";
+        return "Name: " + name + clas + " HP: " + hp + " Mana: " + mana+ " Speed: " + speed + " Fire Attack: " +Attack
+            + " Extra damage from water: +" + waterResist+"% "+ "Fire Resist: "+ fireResist+"%";
          }
 
 
