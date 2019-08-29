@@ -5,7 +5,6 @@
  */
 package Library;
 
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -15,19 +14,21 @@ import java.util.List;
  * @author Horikss
  */
 public class ListB {
-    List list = new ArrayList();
-    public void putList(Object t){
-        list.add((Book) t);
-    }
-    public void showlist(){
-    for(int i =0; i< list.size();i++){
-        System.out.println(list.get(i));
-       
-    }
-    
+	List list = new ArrayList();
 
-}
-	public void sortbyPrice(){
+	public void putList(Object t) {
+		list.add((Book) t);
+	}
+
+	public void showlist() {
+		for (int i = 0; i < list.size(); i++) {
+			System.out.println(list.get(i));
+
+		}
+
+	}
+
+	public void sortbyPrice() {
 		Collections.sort(list, new Sorting());
 	}
 
