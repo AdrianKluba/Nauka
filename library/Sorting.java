@@ -14,12 +14,12 @@ import java.util.Comparator;
 public class Sorting implements Comparator<Book>{
     @Override
     public int compare(Book t, Book t1) {
-       if(t.Price >t1.Price)
+       if(t.Price >t1.Price){
            return -1;
-    
-         if(t.Price < t1.Price)
+       }
+        else if(t.Price < t1.Price){
            return 1;
-         
+         }
          return 0;
     }
     
