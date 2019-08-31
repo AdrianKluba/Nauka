@@ -6,7 +6,7 @@ www.reddit.com/r/dailyprogrammer
 
 adrian.kluba7@gmail.com albo obinix1@gmail.com
 
-Wyjaśnienie programów (kolejność opisu losowa, czas dodawania widoczny na stronie głównej, czas oznacza kolejność wykonywanych zadań, patrząc w kolejności można zobaczyć różnice w pisanym kodzie):<br>
+Wyjaśnienie programów (kolejność opisu losowa, programy były wykonywane w różnych etapach nauki, stąd różnica w pozomie ich wykonania):<br>
 
 [Reddit] Challenge 380 - Change alphabet to morse code<br>
 
