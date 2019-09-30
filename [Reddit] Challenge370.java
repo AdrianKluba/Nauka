@@ -18,7 +18,7 @@ import java.util.Scanner;
 
 public class Challenge370 {
 
-	public static void Main(String[] args) {
+	public static void main(String[] args) {
 		long zero = 0;
 		long odd = 0;
 		long even = 0;
@@ -36,29 +36,29 @@ public class Challenge370 {
 		} while (userNumber == 0);
 
 		long number = userNumber;
-		// UPC = Universal Product Code
-		List<Long> UPC = new ArrayList();
+		// upc = Universal Product Code
+		List<Long> upc = new ArrayList();
 		do {
-			UPC.add(number % 10);
+			upc.add(number % 10);
 			number /= 10;
 		} while (number != 0);
-		while (UPC.size() < 11) {
-			UPC.add(zero);
+		while (upc.size() < 11) {
+			upc.add(zero);
 		}
-		Collections.reverse(UPC);
-		for (int i = 0; i < UPC.size(); i += 2)
-			odd += UPC.get(i);
+		Collections.reverse(upc);
+		for (int i = 0; i < upc.size(); i += 2)
+			odd += upc.get(i);
 
 		odd *= 3;
-		for (int i = 1; i < UPC.size(); i += 2)
-			even += UPC.get(i);
+		for (int i = 1; i < upc.size(); i += 2)
+			even += upc.get(i);
 
 		result = odd + even;
 		finalResult = result % 10;
 		if (finalResult != 0)
 			finalResult -= 10;
 
-		UPC.add(finalResult);
+		upc.add(finalResult);
 		System.out.println("Final Result:" + finalResult);
 		System.out.println(userNumber + "" + finalResult);
 	}
