@@ -21,11 +21,11 @@ public class Challenge380V2 {
 		String[] morsecode = MORSE.split(" ");
 		String[] User = wordChange.split("");
 		List<String> result = new ArrayList();
-		objectMain.Result(alpha, morsecode, User, result);
+		objectMain.result(alpha, morsecode, User, result);
 		System.out.println(result);
 	}
 
-	List<String> Result(String[] alpha, String[] morsecode, String[] User, List<String> result) {
+	List<String> result(String[] alpha, String[] morsecode, String[] User, List<String> result) {
 
 		for (String User1 : User) {
 			for (int i = 0; i < alpha.length; i++) {
