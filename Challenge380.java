@@ -45,12 +45,12 @@ public class Challenge380 {
 		return allList;
 	}
 
-	void Show(List<String> List) {
+	void show(List<String> List) {
 		String show = List.stream().map(Object::toString).collect(Collectors.joining(" "));
 		System.out.println(show);
 	}
 
-	List<String> MorsChange(String fromUser, List<String> allList, List<String> UserList) {
+	List<String> morsChange(String fromUser, List<String> allList, List<String> UserList) {
 		String[] User = fromUser.split("");
 		for (String User1 : User) {
 			for (int x = 0; x < allList.size(); x++) {
