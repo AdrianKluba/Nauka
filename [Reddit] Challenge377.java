@@ -10,7 +10,7 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Challenge377 {
-	public static void Main(String[] args) {
+	public static void main(String[] args) {
 		int mainA = 0; // first size of the main box
 		int mainB = 0; // second size of the main box
 		int smallA = 0; // first size of the small box from user
@@ -31,9 +31,9 @@ public class Challenge377 {
 				System.out.println("Type only numbers!");
 			}
 		}
-		System.out.println(Rotated(mainA, mainB, smallA, smallB));
+		System.out.println(wRotated(mainA, mainB, smallA, smallB));
 	}
-
+	// not Rotated
 	public static int nRotated(int mainA, int mainB, int smallA, int smallB) {
 
 		if (mainA > smallA && mainB > smallB) {
@@ -44,8 +44,8 @@ public class Challenge377 {
 			System.out.println("You can't fit boxes");
 		return 0;
 	}
-
-	public static int Rotated(int mainA, int mainB, int smallA, int smallB) {
+	// with Rotated
+	public static int wRotated(int mainA, int mainB, int smallA, int smallB) {
 
 		int normal = nRotated(mainA, mainB, smallA, smallB);
 		int rotated = nRotated(mainA, mainB, smallB, smallA);
