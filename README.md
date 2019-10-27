@@ -1,5 +1,5 @@
 # Nauka
-Projekty wykonane w ramach nauki
+Projekty wykonane w ramach nauki 
 
 Nazywam się Adrian Kluba, przesyłam tutaj "projekty" wykonane w ramach nauki javy, [reddit] oznacza zadania z:
 www.reddit.com/r/dailyprogrammer
