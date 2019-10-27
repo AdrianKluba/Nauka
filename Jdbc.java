@@ -3,7 +3,7 @@ package jdbc;
 
 import java.sql.*;
 
-public class Jdbc {
+public class Jdbc { 
 
 	public static void main(String[] args) {
 		int toDB = 5;
