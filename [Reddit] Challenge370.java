@@ -6,7 +6,7 @@ Multiply the result by 3 (14 × 3 = 42).
 Add the even-numbered digits (42 + (3 + 0 + 0 + 9 + 4) = 58).
 Find the result modulo 10 (58 divided by 10 is 5 remainder 8, so M = 8).
 If M is not 0, subtract M from 10 to get the check digit (10 - M = 10 - 8 = 2).
-So the check digit is 2, and the complete UPC is 036000291452.
+So the check digit is 2, and the complete UPC is 036000291452. 
 */
 
 
