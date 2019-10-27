@@ -1,6 +1,6 @@
 /*
 Library with stream and lambda
- */
+ */ 
 package library.v2;
 
 import java.util.Arrays;
