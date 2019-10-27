@@ -9,7 +9,7 @@ If M is not 0, subtract M from 10 to get the check digit (10 - M = 10 - 8 = 2).
 So the check digit is 2, and the complete UPC is 036000291452.
 */
 
-package challenge.pkg370;
+package challenge.pkg370; 
 
 import java.util.ArrayList;
 import java.util.Collections;
