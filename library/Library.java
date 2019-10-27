@@ -1,6 +1,6 @@
 /*
 Library with enum + ArrayList + CompareTo + string toString 
- */
+ */ 
 package Library;
 
 /**
