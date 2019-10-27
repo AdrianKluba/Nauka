@@ -1,5 +1,5 @@
 /*
-Remove all 0's from the sequence (i.e. warmup1).
+Remove all 0's from the sequence (i.e. warmup1). 
 
 If the sequence is now empty (no elements left), stop and return true.
 
