@@ -1,5 +1,5 @@
 /*
-Change alphabet to morse code, 
+Change alphabet to morse code,  
 v2 less code
  */
 
