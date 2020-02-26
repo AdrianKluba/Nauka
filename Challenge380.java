@@ -2,7 +2,7 @@
 Challenge #380
 From Alphabet to morse code
  */ 
-
+ 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
