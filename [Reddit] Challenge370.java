@@ -1,4 +1,4 @@
-/* 
+/*  
 Challenge #370 [Easy] UPC check digits
 For example, given the first 11 digits of a UPC 03600029145, you can compute the check digit like this:
 Sum the odd-numbered digits (0 + 6 + 0 + 2 + 1 + 5 = 14).
