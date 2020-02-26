@@ -1,7 +1,7 @@
 /*
 Change alphabet to morse code,  
 v2 less code
- */
+ */ 
 
 import java.util.ArrayList;
 import java.util.List;
